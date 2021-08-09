@@ -30,36 +30,36 @@ describe("Test engineer class", () => {
 
     it("Should return Engineer when getRole() is called", () => {
         
-        const engineer = makeEngineer();
         const expected = "Engineer";
+        const engineer = makeEngineer();
         expect(engineer.getRole()).toEqual(expected);
     });
 
     it("Should return email when getEmail() is called", () => {
         
-        const engineer = makeEngineer(123, 234, expected, 789);
         const expected = "test@email.com";
+        const engineer = makeEngineer(123, 234, expected, 789);
         expect(engineer.getEmail()).toEqual(expected);
     });
 
     it("Should return name when getName() is called", () => {
         
-        const engineer = makeEngineer(expected, 234, 567, 789);
         const expected = "Engineer";
+        const engineer = makeEngineer(expected, 234, 567, 789);
         expect(engineer.getRole()).toEqual(expected);
     });
 
     it("Should return an ID when getId()) is called", () => {
         
-        const engineer = makeEngineer(123, expected, 567, 789);
         const expected = "123";
+        const engineer = makeEngineer(123, expected, 567, 789);
         expect(engineer.getId()).toEqual(expected);
     });
 
     it("Should return github when getGithub() is called", () => {
 
-        const engineer = makeEngineer(123, 234, 567, expected);
         const expected = "github";
+        const engineer = makeEngineer(123, 234, 567, expected);
         expect(engineer.getGithub()).toEqual(expected);
 
     });

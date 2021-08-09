@@ -30,37 +30,37 @@ describe("Test manager class", () => {
 
     it("Should return Manager when getRole() is called", () => {
         
-        const manager = makeManager();
         const expected = "Manager";
+        const manager = makeManager();
         expect(manager.getRole()).toEqual(expected);
     });
 
     it("Should return email when getEmail() is called", () => {
         
-        const manager = makeManager(123, 234, expected, 789);
         const expected = "test@email.com";
+        const manager = makeManager(123, 234, expected, 789);
         expect(manager.getEmail()).toEqual(expected);
     });
 
     it("Should return name when getName() is called", () => {
         
-        const manager = makeManager(expected, 234, 567, 789);
         const expected = "Manager";
+        const manager = makeManager(expected, 234, 567, 789);
         expect(manager.getRole()).toEqual(expected);
     });
 
     it("Should return an ID when getId()) is called", () => {
         
-        const manager = makeManager(123, expected, 567, 789);
         const expected = "123";
+        const manager = makeManager(123, expected, 567, 789);
         expect(manager.getId()).toEqual(expected);
     });
 
     it("Should return officeNumber when getGithub() is called", () => {
 
-        const manager = makeManager(123, 234, 567, expected);
         const expected = "officeNumber";
-        expect(manager.getGithub()).toEqual(expected);
+        const manager = makeManager(123, 234, 567, expected);
+        expect(manager.getOfficeNumber()).toEqual(expected);
 
     });
 })
